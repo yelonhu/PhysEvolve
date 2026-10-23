@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "min_collisions": 1,
+  "bodies": {
+    "block": {
+      "final_grid": [10, 8, 0],
+      "final_status": "stable"
+    }
+  }
+}

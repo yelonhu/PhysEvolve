@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "min_collisions": 1,
+  "bodies": {
+    "a": {
+      "final_grid": [10, 8, 0],
+      "final_status": "fallen"
+    },
+    "b": {
+      "final_grid": [9, 8, 0],
+      "final_status": "fallen"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "min_collisions": 1,
+  "bodies": {
+    "ball": {
+      "final_grid": [14, 8, 0],
+      "final_status": "fallen"
+    }
+  }
+}

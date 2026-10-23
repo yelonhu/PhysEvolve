@@ -1,0 +1,693 @@
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "none of the above", "both pits"], "weight": 54}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "both pits", "none of the above"], "weight": 17}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the center pit", "none of the above"], "weight": 12}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "neither pit", "both pits"], "weight": 8}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "none of the above."], "weight": 7}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above"], "weight": 7}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both the <color> and <color> floating walls"], "weight": 6}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "floating"], "weight": 5}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "inverted"], "weight": 5}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove the <color> floating wall and other balls"], "weight": 5}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "none of the above.", "remove both the <color> and <color> floating walls."], "weight": 5}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the middle pit", "none of the above"], "weight": 4}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "both pits", "neither pit"], "weight": 4}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both the <color> and <color> floating walls", "none of the above"], "weight": 4}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above"], "weight": 4}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "uncertain"], "weight": 3}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "left"], "weight": 3}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "uncertain"], "weight": 3}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "tilting slightly"], "weight": 3}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the central pit", "none of the above"], "weight": 3}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "no pit", "both pits"], "weight": 3}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both floating walls and other balls", "none of the above"], "weight": 3}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "remove both the <color> and <color> floating walls.", "none of the above."], "weight": 3}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "uncertain"], "weight": 2}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "left"], "weight": 2}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "left"], "weight": 2}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 2}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "left"], "weight": 2}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 2}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 2}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "inverted."], "weight": 2}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "broken into pieces"], "weight": 2}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "hanging vertically"], "weight": 2}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "upside down"], "weight": 2}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "tilting slightly."], "weight": 2}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "slightly tilted."], "weight": 2}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "floating"], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both <color> and <color> floating walls"], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "do nothing.", "none of the above."], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "remove both <color> and <color> floating walls.", "none of the above."], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both <color> and <color> floating walls and other balls", "none of the above"], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "remove both floating walls.", "none of the above."], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both floating walls"], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both <color> and <color> floating walls and other balls", "none of the above"], "weight": 2}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove all floating walls"], "weight": 2}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "can not answer", "uncertain"], "weight": 2}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot answer", "maybe"], "weight": 2}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "can not answer", "uncertain"], "weight": 2}
+{"family": "throwing_final_destination", "options": ["the left pit", "the right pit", "none of the above", "both pits"], "weight": 2}
+{"family": "throwing_final_destination", "options": ["the left pit", "the right pit", "both pits", "none of the above"], "weight": 2}
+{"family": "collision_final_relation", "options": ["they collide", "they do not collide", "they move away from each other", "they stay stationary"], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide.", "they do not collide.", "they merge.", "they avoid each other."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate collides with the <color> pillar.", "the <color> plate does not collide with the <color> pillar.", "the <color> plate moves away from the <color> pillar.", "the <color> plate is stationary next to the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar does not collide with the <color> plate.", "the <color> pillar moves away from the <color> plate.", "the <color> pillar is parallel to the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide.", "they avoid each other.", "they stand parallel.", "they rotate around each other."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide.", "they move parallel.", "they do not interact.", "they repel each other."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate collides with the <color> pillar.", "the <color> plate moves away from the <color> pillar.", "the <color> plate passes over the <color> pillar.", "the <color> plate does not interact with the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar avoids the <color> plate.", "the <color> pillar passes above the <color> plate.", "the <color> pillar circles around the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar does not collide with the <color> plate.", "the <color> pillar misses the <color> plate.", "the <color> pillar passes below the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "it is uncertain", "it is irrelevant"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only sometimes", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "it is unknown"], "weight": 1}
+{"family": "collision_final_relation", "options": ["it collides", "it bypasses", "it stops", "it reverses"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate touches the <color> pillar", "the <color> plate does not touch the <color> pillar", "the <color> plate passes by the <color> pillar", "the <color> plate breaks the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate touches the <color> pillar.", "the <color> plate does not touch the <color> pillar.", "the <color> plate is glued to the <color> pillar.", "the <color> plate moves away from the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate is in touch with the <color> pillar.", "the <color> plate is not in touch with the <color> pillar.", "the <color> plate is partially in touch with the <color> pillar.", "the interaction is unknown."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they touch.", "they do not touch.", "they partially touch.", "they briefly touch then separate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate touches the <color> pillar.", "the <color> plate does not touch the <color> pillar.", "the <color> plate merges with the <color> pillar.", "the <color> plate avoids the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar is in touch with the <color> plate.", "the <color> pillar is not in touch with the <color> plate.", "the <color> pillar is above the <color> plate.", "the <color> pillar is below the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar touches the <color> plate.", "the <color> pillar does not touch the <color> plate.", "the <color> pillar passes through the <color> plate.", "the <color> pillar moves away from the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate collides with the <color> pillar", "the <color> plate does not collide with the <color> pillar", "the <color> plate moves away from the <color> pillar", "the <color> plate and the <color> pillar are stationary"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar contacts the <color> plate.", "the <color> pillar does not touch the <color> plate.", "the <color> pillar moves above the <color> plate.", "the <color> pillar supports the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide with each other.", "they do not collide.", "they move together.", "they are stationary."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only partially", "not enough information"], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide", "they do not collide", "they move together", "they are fixed in place"], "weight": 1}
+{"family": "collision_final_relation", "options": ["it stays away from the <color> plate", "it breaks the <color> plate", "it finally touches the <color> plate", "it melts before touching the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only if conditions are met", "it is not specified"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only sometimes", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide", "they do not collide", "they are parallel", "they are perpendicular"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "maybe", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate", "the <color> pillar avoids the <color> plate", "the <color> pillar supports the <color> plate", "the <color> pillar does nothing to the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "partially", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "it moves away", "it stays static"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar avoids the <color> plate.", "the <color> pillar moves parallel to the <color> plate.", "the <color> pillar is static relative to the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they do not touch", "they collide", "the <color> plate moves away from the <color> pillar", "the <color> pillar moves away from the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "depends on the situation"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar does not collide with the <color> plate.", "the <color> pillar moves parallel to the <color> plate.", "the <color> plate obstructs the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate collides with the <color> pillar.", "the <color> plate does not collide with the <color> pillar.", "the <color> plate moves away from the <color> pillar.", "the <color> plate merges with the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide.", "they do not collide.", "they pass by each other.", "they merge together."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide", "they do not collide", "they intersect slightly", "they are parallel"], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide", "they do not collide", "they merge", "they intersect partially"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only in certain conditions", "not enough information"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar does not collide with the <color> plate.", "the <color> pillar supports the <color> plate.", "the <color> pillar is parallel to the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "maybe", "inconclusive"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "it is uncertain", "only partially"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate", "the <color> pillar does not collide with the <color> plate", "the <color> pillar passes through the <color> plate", "the <color> pillar hovers above the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "only if conditions are right"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "not sure"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only if it moves", "only if the <color> plate is moved"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar avoids the <color> plate.", "the <color> pillar passes through the <color> plate.", "the <color> pillar supports the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only partially", "sometimes"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only partially", "it is uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only temporarily", "not enough information"], "weight": 1}
+{"family": "collision_final_relation", "options": ["they never collide", "they sometimes collide", "they always collide", "unsure"], "weight": 1}
+{"family": "collision_final_relation", "options": ["they collide.", "they do not collide.", "they slide past each other.", "they are stationary."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate collides with the <color> pillar.", "the <color> plate moves around the <color> pillar.", "the <color> plate avoids the <color> pillar.", "the <color> plate passes through the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they do not collide.", "they collide.", "the <color> plate moves away.", "the <color> pillar avoids the plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only partially", "it depends"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar does not collide with the <color> plate.", "the <color> plate collides with a different pillar.", "the <color> pillar and <color> plate are in contact but do not collide."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar does not collide with the <color> plate.", "the <color> pillar merges with the <color> plate.", "the <color> pillar moves away from the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only under certain conditions", "cannot be determined"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate collides with the <color> pillar", "the <color> plate does not collide with the <color> pillar", "the <color> plate partially collides with the <color> pillar", "the <color> plate is unaffected by the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only partially", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "uncertain", "sometimes"], "weight": 1}
+{"family": "collision_final_relation", "options": ["it touches the <color> plate.", "it does not touch the <color> plate.", "it hovers above the <color> plate.", "it is beneath the <color> plate."], "weight": 1}
+{"family": "collision_final_relation", "options": ["touching the <color> plate", "not touching the <color> plate", "floating above the <color> plate", "beneath the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["touches the <color> plate", "does not touch the <color> plate", "is above the <color> plate", "is below the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["it touches the <color> plate", "it does not touch the <color> plate", "it moves away from the <color> plate", "it is uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate is above the <color> pillar.", "the <color> plate is below the <color> pillar.", "the <color> plate is touching the <color> pillar.", "the <color> plate is not touching the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate touches the <color> pillar.", "the <color> plate does not touch the <color> pillar.", "the <color> plate is above the <color> pillar.", "the <color> plate is below the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["in touch with the <color> pillar", "not in touch with the <color> pillar", "above the <color> pillar", "below the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate touches the <color> pillar.", "the <color> plate does not touch the <color> pillar.", "the <color> plate is above the <color> pillar.", "the <color> plate is beside the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they are touching.", "they are not touching.", "<color> plate is above the <color> pillar.", "<color> plate is below the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate is in touch with the <color> pillar.", "the <color> plate is not in touch with the <color> pillar.", "the <color> plate is above the <color> pillar.", "the <color> plate is below the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "depends on the situation"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only under certain conditions", "it's not specified"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only under certain conditions", "it is unknown"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "clockwise", "anti-clockwise", "it would break"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> solid pulley would rotate clockwise", "the <color> hollow pulley would move up", "the <color> pulley would not rotate", "the <color> pulley would rotate counterclockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["in touch with the <color> pillar", "not in touch with the <color> pillar", "above the <color> pillar", "under the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["they are in touch", "they are not in touch", "they partially touch", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["<color> plate", "<color> plate", "<color> plate", "<color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["it's in touch with the <color> pillar.", "it's not in touch with the <color> pillar.", "it's partially in touch with the <color> pillar.", "the status is unknown."], "weight": 1}
+{"family": "collision_final_relation", "options": ["they are in touch.", "they are not in touch.", "the <color> plate breaks.", "the <color> pillar breaks."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "only under certain conditions"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "uncertain", "rarely"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "maybe", "cannot be determined"], "weight": 1}
+{"family": "collision_final_relation", "options": ["touching it", "not touching it", "broken and touching it", "broken and not touching it"], "weight": 1}
+{"family": "collision_final_relation", "options": ["in touch with <color> pillar", "not in touch with <color> pillar", "on top of <color> pillar", "below the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "it touches partially", "it does not come close"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "maybe", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate touches the <color> pillar.", "the <color> plate does not touch the <color> pillar.", "the <color> plate moves closer to the <color> pillar but does not touch.", "the <color> plate moves away from the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only with the <color> pillar", "only with the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar collides with the <color> plate.", "the <color> pillar does not collide with the <color> plate.", "the <color> pillar moves parallel to the <color> plate.", "the <color> pillar and the <color> plate are stationary."], "weight": 1}
+{"family": "collision_final_relation", "options": ["in touch with the <color> plate", "not in touch with the <color> plate", "partially in touch with the <color> plate", "moving towards the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["not in touch with the <color> pillar", "in touch with the <color> pillar", "in touch with the <color> pillar", "above the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "uncertain", "sometimes"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar touches the <color> plate", "the <color> pillar does not touch the <color> plate", "the <color> pillar is above the <color> plate", "the <color> pillar is below the <color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["in touch with the <color> pillar", "not in touch with the <color> pillar", "on top of the <color> pillar", "under the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate touches the <color> pillar.", "the <color> plate does not touch the <color> pillar.", "the <color> plate moves away from the <color> pillar.", "the <color> plate hovers over the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pillar does not touch the <color> plate.", "the <color> pillar is touching the <color> plate.", "the <color> pillar is halfway to the <color> plate.", "the <color> pillar is above the <color> plate but not touching it."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "it is uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "only if the <color> pillar is removed"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate does not collide with the <color> pillar.", "the <color> plate slides past the <color> pillar.", "the <color> plate collides with the <color> pillar.", "the <color> plate avoids the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> plate collides with the <color> pillar.", "the <color> plate avoids the <color> pillar.", "the <color> plate passes under the <color> pillar.", "the <color> plate passes over the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["in touch", "not in touch", "broken", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["it touches the <color> pillar.", "it does not touch the <color> pillar.", "it partially touches the <color> pillar.", "it almost touches the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only if the <color> stick is removed", "only if the <color> stick is added"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "never"], "weight": 1}
+{"family": "collision_final_relation", "options": ["it touches the <color> pillar.", "it does not touch the <color> pillar.", "it is above the <color> pillar.", "it is below the <color> pillar."], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["<color> plate", "<color> plate", "<color> plate", "<color> plate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["in touch with the <color> pillar", "not in touch with the <color> pillar", "above the <color> pillar", "below the <color> pillar"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only occasionally", "not specified"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "only sometimes", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["yes", "no", "sometimes", "unknown"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> sphere would move up", "the <color> pulley would rotate clockwise", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move down", "the <color> dynamic pulley would move down", "the <color> pulley would rotate", "the <color> hollow static pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> cube would move up", "the <color> pulley would move down", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move down", "the <color> pulley would not rotate", "the <color> pulley would rotate anti-clockwise", "the <color> sphere would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "to the side"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would not move", "the <color> pulley would not rotate", "the <color> pulley would rotate clockwise", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "reverse"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "diagonal"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "it would rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise", "the <color> solid pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "reverses direction"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would not rotate", "the <color> pulley would rotate clockwise", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> hollow static pulley would move down", "the <color> solid pulley would move down", "the <color> solid pulley would not rotate", "the <color> hollow static pulley would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would move down", "the <color> cube would float"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> cube would move down", "the <color> sphere would not move", "both a and c"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "clockwise", "stationary", "it would vary"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "to the side"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "irregularly"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move down", "the <color> pulley would move up", "the <color> pulley would move down", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> cube", "either decrease the mass of the <color> cube or increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "clockwise", "stationary", "unable to determine"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> cube to zero"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> solid pulley would not rotate", "the <color> sphere would move down", "the <color> pulley would rotate clockwise", "the <color> pulley would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> sphere would move up", "the <color> solid pulley would move up", "the <color> hollow pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "anti-clockwise", "stationary", "both clockwise and anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "faster to the right"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> sphere would move up", "the <color> cube would move up", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not move", "the <color> pulley would rotate clockwise", "the <color> sphere would move up", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> pulley would move up", "the <color> sphere would move down", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "clockwise", "stationary", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "it doesn't rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move up", "the <color> pulley would not rotate", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "clockwise", "stationary", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "clockwise", "anti-clockwise", "not rotating"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "no movement"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "anti-clockwise", "stationary", "can't be determined"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "there's no effect"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "no rotation"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "to the side"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would not move", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "unable to determine"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "rotates"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "both directions"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move up", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise", "the <color> sphere would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "to the left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> cube would stay in place", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> cube would move up", "the <color> pulley would rotate anti-clockwise", "the <color> cube would remain still"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> cube would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move down", "the <color> pulley would move down", "the <color> pulley would not rotate", "the <color> cube would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> sphere would move up", "the <color> pulley would rotate clockwise", "all of the above would happen"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere and decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move up", "the <color> pulley would rotate clockwise", "the <color> pulley would rotate clockwise", "the <color> sphere would remain stationary"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would rotate clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> pulley would not rotate", "the <color> pulley would move down", "the <color> sphere would float"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> static pulley would move up", "the <color> static pulley would not rotate", "the <color> pulley would not rotate", "the <color> cube would stay put"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> sphere would move up", "the <color> pulley would not rotate", "the <color> sphere would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "anti-clockwise", "stationary", "oscillate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise", "the <color> hollow pulley would move up", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would not move", "the <color> pulley would not rotate", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> solid pulley would not rotate", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would not rotate", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would not move", "the <color> pulley would move up", "the <color> pulley would not move", "the <color> sphere would fall faster"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would rotate clockwise", "the <color> pulley would move up", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> sphere would move up", "the <color> pulley would move down", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move down", "the <color> pulley would not rotate", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move up", "the <color> pulley would move up", "the <color> pulley would rotate clockwise", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "both b and c"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move up", "the <color> pulley would not rotate", "the <color> pulley would move up", "the <color> cube would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "it would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> solid static pulley would not rotate", "the <color> cube would move up", "the <color> pulley would rotate clockwise", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would move up", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> sphere would not move", "the <color> cube would move down", "the <color> pulley would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "it will not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "both directions"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "the direction would depend on additional factors"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> dynamic pulley would move down", "the <color> static pulley would move up", "the <color> dynamic pulley would move up", "the <color> pulley would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move up", "the <color> hollow pulley would not rotate", "the <color> hollow pulley would move up", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of both cubes"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "to the left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "clockwise", "stationary", "both directions"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise", "the <color> pulley would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "stationary", "down", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "downward and then upward"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move down", "the <color> cube would move up", "the <color> pulley would rotate clockwise", "all of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> hollow pulley would rotate anti-clockwise", "the <color> solid pulley would rotate clockwise", "the <color> solid pulley would rotate anti-clockwise", "the <color> hollow pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would rotate anti-clockwise", "the <color> hollow pulley would rotate anti-clockwise", "the <color> cube would float"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> sphere would move up", "the <color> hollow pulley would not rotate", "all of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> dynamic pulley would not rotate", "the <color> static pulley would move up", "the <color> static pulley would rotate", "the <color> cube would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "both a and c"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move up", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would move up", "the <color> sphere would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> hollow pulley would rotate clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> hollow pulley would move up", "the <color> cube would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> hollow pulley would rotate clockwise", "the <color> pulley would move up", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> solid pulley would not move", "the <color> sphere would move down", "the <color> hollow pulley would move up", "the <color> solid pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "clockwise", "anti-clockwise", "irregular"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would move down", "the <color> cube would move up", "the <color> cube would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "cannot be determined"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move up", "the <color> pulley would rotate clockwise", "the <color> pulley would move up", "the <color> pulley would rotate counterclockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move down", "the <color> pulley would not move", "the <color> pulley would rotate", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "remain stationary", "up", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would rotate clockwise", "the <color> pulley would not rotate", "the <color> sphere would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move down", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise", "the <color> sphere would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would move up", "the <color> sphere would move up", "the <color> sphere would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "both a and b", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "anti-clockwise", "stationary", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would rotate clockwise", "the <color> pulley would rotate clockwise", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "left", "stationary"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move up", "the <color> pulley would move down", "the <color> pulley would rotate clockwise", "the <color> sphere would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> pulley would move down", "the <color> pulley would not move", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "varies"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would not move", "the <color> solid pulley would rotate clockwise", "the <color> hollow pulley would move down", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "it depends on other factors"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "uncertain"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move down", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would not rotate", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not move", "the <color> pulley would move up", "the <color> pulley would not rotate", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move down", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> sphere would float"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would move up", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move down", "the <color> pulley would rotate anti-clockwise", "the <color> sphere would move up", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "all of the above options must be done"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> solid pulley would rotate anti-clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> solid pulley would not rotate", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "cannot determine"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> pulley would move down", "the <color> sphere would move up", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> cube would not move", "the <color> pulley would move up", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "diagonally"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not rotate", "the <color> sphere would move up", "the <color> cube would move up", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "anti-clockwise", "clockwise", "it would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> sphere would move up", "the <color> pulley would move up", "all of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "anti-clockwise", "stationary", "both directions"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cylinder"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "increase the mass of the <color> cube", "keep the masses unchanged"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "move sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "back and forth"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not move", "the <color> pulley would rotate clockwise", "the <color> pulley would move down", "the <color> pulley would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move down", "the <color> pulley would rotate anti-clockwise", "the <color> pulley would rotate clockwise", "the <color> pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would not move", "the <color> pulley would not move", "the <color> pulley would rotate clockwise", "the <color> pulley would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "increase the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "increase the mass of the <color> cube", "increase the mass of the <color> sphere", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "all of the above options must be done"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move down", "the <color> pulley would rotate clockwise", "the <color> cube would move down", "the <color> pulley would move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "anti-clockwise", "stationary", "alternating"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "stationary", "up", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "stationary", "anti-clockwise", "opposite to clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> solid pulley would not rotate", "the <color> pulley would move down", "the <color> pulley would rotate anti-clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> pulley would not move", "the <color> pulley would move up", "the <color> cube would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move up", "the <color> pulley would move down", "the <color> pulley would rotate clockwise", "the <color> cube would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["up", "down", "stationary", "to the side"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would not move", "the <color> cube would move down", "the <color> pulley would move up", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "down", "up", "sideways"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move up", "the <color> pulley would move down", "the <color> pulley would rotate clockwise", "the <color> cube would float"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> cube would move down", "the <color> pulley would rotate clockwise", "the <color> pulley would rotate anti-clockwise", "the <color> sphere would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> sphere would move up", "the <color> pulley would not rotate", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "fluctuate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would not move", "the <color> pulley would not rotate", "the <color> pulley would move down", "the <color> pulley would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> sphere", "decrease the mass of the <color> cube", "increase the mass of the <color> cube", "decrease the mass of the <color> sphere or increase the mass of the <color> cube"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> pulley would not move", "the <color> pulley would not move", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> hollow pulley would not rotate", "the <color> hollow pulley would move down", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["anti-clockwise", "stationary", "clockwise", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "cannot be determined"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "up", "down", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["increase the mass of the <color> sphere", "increase the mass of the <color> sphere", "decrease the mass of the <color> sphere", "increase the volume of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["down", "up", "stationary", "left"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate clockwise", "the <color> pulley would move down", "the <color> pulley would move up", "the <color> pulley would rotate clockwise"], "weight": 1}
+{"family": "collision_final_relation", "options": ["stationary", "clockwise", "anti-clockwise", "it would not move"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would rotate anti-clockwise", "the <color> hollow pulley would move down", "the <color> solid pulley would rotate anti-clockwise", "the <color> cube would move up"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "decrease the mass of the <color> sphere", "increase the mass of the <color> cube", "increase the mass of the <color> sphere"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> pulley would move up", "the <color> cube would move down", "the <color> sphere would move down", "the <color> hollow pulley would not rotate"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> sphere would move down", "the <color> pulley would move down", "the <color> pulley would not move", "the <color> sphere would stay in place"], "weight": 1}
+{"family": "collision_final_relation", "options": ["the <color> solid pulley would not rotate", "the <color> pulley would move up", "the <color> hollow pulley would rotate clockwise", "the <color> pulley would move down"], "weight": 1}
+{"family": "collision_final_relation", "options": ["clockwise", "anti-clockwise", "stationary", "none of the above"], "weight": 1}
+{"family": "collision_final_relation", "options": ["decrease the mass of the <color> cube", "increase the mass of the <color> sphere", "increase the mass of the <color> cube", "decrease the mass of the <color> cylinder"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "collapsed"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "floating mid-air"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "broken"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "tilted to the side"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "hanging in mid-air."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "suspended in midair."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "partially submerged"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "floating in the air."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "rolling around"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "tilting slightly."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "hanging"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "broken into pieces."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "swinging."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "upside down."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "suspended in the air"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "floating vertically"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "falling down."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "floating in the air"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "broken"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "unsteady"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "rotating"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "hovering in mid-air"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "rolling away"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "inverted"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "tilting upwards"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "suspended mid-air."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "upside down."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "rotating vertically"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "titled at an angle"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "inverted upside down."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "tilting diagonally"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "tilting vertically"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "almost vertical"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "bending"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "inclined at an angle"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "inverted"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "rotating continuously."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "completely vertical"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "partially leaning"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "rotated diagonally"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "hanging vertically."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "balancing on an edge"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "balancing on one edge"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "bent diagonally."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "standing diagonally"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "floating."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "partially submerged"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "tilted at an angle"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "in motion."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "floating"], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright.", "leaning.", "lying horizontally.", "inverted horizontally."], "weight": 1}
+{"family": "collision_final_state", "options": ["standing upright", "leaning", "lying horizontally", "suspended mid-air"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains standing.", "it wobbles but doesn't fall.", "it leans to one side."], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains upright.", "it falls over.", "it disintegrates.", "it changes color."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it remains standing", "it cracks", "it tilts slightly"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright", "it falls over", "it disappears", "it changes color"], "weight": 1}
+{"family": "collision_final_state", "options": ["it moves past it", "it collides with it", "it stops before it", "it avoids it"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stays upright", "it changes color", "it disappears"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it disappears.", "it changes color."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it leans slightly.", "it breaks into pieces."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands still.", "it falls over.", "it becomes taller.", "it changes color."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright", "it falls over", "it leans", "it disappears"], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains stable.", "it falls over.", "it splits into two.", "it changes color."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains standing.", "it partially collapses.", "it leans without falling."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it leans to the side.", "it remains intact, without any movement."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it leans to one side.", "it remains stable but tilted."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it does not fall over", "it breaks in two", "it tilts but stays upright"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it remains standing", "it moves slightly but doesn't fall", "it is replaced"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it does not fall over", "it tilts but does not fall", "it is moved to another position"], "weight": 1}
+{"family": "collision_final_state", "options": ["it dodges the <color> plate.", "it collides with the <color> plate.", "it bypasses the <color> plate.", "it avoids the <color> plate."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stays upright", "it falls over", "it changes color", "it moves to a different position"], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains upright.", "it falls over.", "it splits in two.", "it leans but does not fall."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stays upright", "it leans slightly", "it disappears"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stands upright", "it changes color", "it disappears"], "weight": 1}
+{"family": "collision_final_state", "options": ["it collides with the <color> pillar.", "it avoids the <color> pillar.", "it bends around the <color> pillar.", "it passes through the <color> pillar."], "weight": 1}
+{"family": "collision_final_state", "options": ["it neutralizes", "it rises", "it falls over", "it remains still"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it stays upright.", "it tilts slightly.", "it gets moved to another location."], "weight": 1}
+{"family": "collision_final_state", "options": ["the <color> plate touches the <color> pillar", "the <color> plate does not touch the <color> pillar", "the <color> plate moves away from the <color> pillar", "the <color> plate hovers above the <color> pillar"], "weight": 1}
+{"family": "collision_final_state", "options": ["the <color> plate touches the <color> pillar", "the <color> plate moves away from the <color> pillar", "the <color> plate breaks near the <color> pillar", "the <color> plate stays stationary"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stands upright", "it is moved", "it is unaffected"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains standing.", "it gets removed.", "it splits in half."], "weight": 1}
+{"family": "collision_final_state", "options": ["the <color> plate touches the <color> pillar", "the <color> plate stays away from the <color> pillar", "the <color> plate blocks the <color> pillar", "the <color> plate breaks the <color> pillar"], "weight": 1}
+{"family": "collision_final_state", "options": ["it is in touch with the <color> plate.", "it is not in touch with the <color> plate.", "it is close but not in touch with the <color> plate.", "it breaks before reaching the <color> plate."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright", "it leans to one side", "it falls over", "it remains stable"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it leans to the left.", "it leans to the right."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it tilts slightly.", "it remains stable."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it remains standing", "it cracks", "it bends"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands erect", "it leans to one side", "it falls over", "it breaks into pieces"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it remains tilted.", "it disappears."], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains upright.", "it falls over.", "it gets shorter.", "it tilts slightly."], "weight": 1}
+{"family": "collision_final_state", "options": ["it doesn't touch the <color> pillar.", "it hovers above the <color> pillar.", "it is in touch with the <color> pillar.", "it falls next to the <color> pillar."], "weight": 1}
+{"family": "collision_final_state", "options": ["it collides with the <color> plate.", "it moves around the <color> plate.", "it does not interact with the <color> plate.", "it stops before reaching the <color> plate."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stays upright", "it disappears", "it changes color"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands firm", "it moves slightly", "it falls over", "it leans to the side"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it remains standing", "it changes color", "it disappears"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stands upright.", "it falls over.", "it moves but stays upright.", "it disappears."], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains upright", "it falls over", "it disappears", "it changes color"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains in place.", "it breaks into pieces.", "it floats away."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stays in place.", "it falls over.", "it shifts slightly.", "it tilts but remains upright."], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains steady", "it falls over", "it slides", "it rotates"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it stays upright.", "it wobbles but does not fall.", "it remains in its original position."], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains upright.", "it falls over.", "it rotates.", "it disappears."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stays upright", "it breaks", "it dissolves"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stays upright", "it wobbles but remains in place", "it slides to the side"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains upright.", "it disappears.", "it rotates."], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains in place.", "it falls over.", "it tilts slightly.", "it gets removed."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains in place.", "it tilts slightly.", "it breaks."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stays upright", "it breaks", "it moves sideways"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it remains stable", "it breaks", "it tilts but does not fall"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it stays in place.", "it moves slightly but doesn't fall.", "it breaks."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it stays upright", "it tilts but doesn't fall", "it is removed"], "weight": 1}
+{"family": "collision_final_state", "options": ["it remains stable", "it falls over", "it turns to dust", "it evaporates"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it does not fall over.", "it tilts slightly.", "it breaks into pieces."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it does not fall over.", "it cracks.", "it bends."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stays upright.", "it falls over.", "it disappears.", "it changes color."], "weight": 1}
+{"family": "collision_final_state", "options": ["it stays in place", "it falls over", "it moves slightly", "it gets lifted"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stays in place.", "it falls over.", "it changes color.", "it disappears."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it stays in place.", "it cracks.", "it moves slightly."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over", "it does not fall over", "it cracks", "it bends"], "weight": 1}
+{"family": "collision_final_state", "options": ["it stays in place", "it falls over", "it tilts to one side", "it moves slightly"], "weight": 1}
+{"family": "collision_final_state", "options": ["falls over", "stays in place", "starts shaking", "becomes smaller"], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it stays upright.", "it breaks.", "it moves slightly but does not fall."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains in place.", "it cracks.", "it moves slightly but does not fall."], "weight": 1}
+{"family": "collision_final_state", "options": ["it falls over.", "it remains steady.", "it breaks.", "it moves slightly."], "weight": 1}
+{"family": "collision_first_contact", "options": ["the <color> pillar", "the <color> pillar", "the <color> pillar", "the <color> pillar"], "weight": 1}
+{"family": "collision_first_contact", "options": ["<color> post", "<color> rod", "<color> pillar", "<color> beam"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "none of the above", "it remains suspended"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "none of the above", "either of the pits"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the right pit", "the left pit", "neither pit", "both pits"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "both pits", "neither of the pits"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the center pit", "none of the above"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "none of the above", "both of the pits"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "it will not drop into any pit", "it will remain in place"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the middle pit", "it would not drop into any pit"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "both pits", "it would not drop into any pit"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "neither of the pits", "both pits"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "none of the above", "both the left and right pits"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the top pit", "none of the above"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "none of the above", "the center pit"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the central pit", "it would not drop into any pit"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "none of the above", "both pits equally"], "weight": 1}
+{"family": "counterfactual_destination", "options": ["the left pit", "the right pit", "the central pit", "the far-right pit"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "both of the above", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both floating walls and all balls"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "both a and b"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "remove both the <color> and <color> floating walls and other balls.", "none of the above."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both floating walls and other balls", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "change the color of the <color> ball"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "both a and b", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both walls and other balls"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "none of the above.", "remove both floating walls and the other balls."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove the <color> floating wall and other balls"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both the <color> and <color> floating walls and other balls", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall.", "remove the <color> floating wall.", "remove other balls only.", "none of the above."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "do nothing", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both <color> and <color> floating walls along with other balls", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "do nothing", "use an external force"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "both a and b", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "all of the above.", "none of the above."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both the <color> and <color> floating walls along with the other balls"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both the <color> and <color> floating walls and other balls"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "both a and b", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "remove both floating walls and other balls.", "none of the above."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "adjust the <color> lever and remove the <color> barrier.", "none of the above."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "add more balls"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both <color> and <color> floating walls", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "both a and b"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both floating walls", "none of the above"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "either a or b"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "none of the above.", "remove both the <color> and <color> floating walls and other balls."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove both floating walls and other balls"], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "both a and b", "none of the above."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls.", "remove the <color> floating wall and other balls.", "none of the above.", "remove the <color> floating wall and other balls."], "weight": 1}
+{"family": "inverse_intervention", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of the above", "remove only the <color> floating wall"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot be determined", "it depends on the conditions"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot determine", "sometimes"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "maybe", "can not answer"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "maybe", "depends on the conditions"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "maybe", "cannot be determined"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot answer", "it depends on other factors"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "uncertain", "needs more information"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "can not answer", "maybe"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "can't be determined", "not applicable"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot answer", "needs more information"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot answer", "it depends"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "can not answer", "it depends"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot be determined", "it depends"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "maybe", "uncertain"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "maybe", "can not answer"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "can not answer", "possibly"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot answer", "likely"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "can not answer", "need more information"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot be determined", "unlikely"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "possibly", "uncertain"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot be determined", "only if another action happens"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "maybe", "insufficient information"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot answer", "it depends"], "weight": 1}
+{"family": "throwing_current_run_judgment", "options": ["yes", "no", "cannot answer", "not sure"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it is standing.", "it is falling.", "it has fallen.", "it is damaged."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["yes.", "no.", "sometimes.", "only when pushed."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["upright", "fallen over", "broken", "missing"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["fallen", "standing", "leaning", "broken"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it falls over.", "it does not fall over.", "it is broken.", "it is moving."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["standing", "leaning", "falling over", "broken"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it is tilted.", "it is stable.", "it falls over after some time.", "it is not present."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["fallen over", "intact", "missing", "broken"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the right pit", "it will not drop into the right pit", "it will drop into the left pit", "it will remain suspended"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit.", "it will not drop into the left pit.", "it will drop into the right pit.", "it will stay in place."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["drop into the left pit", "drop into the right pit", "remain in place", "bounce out"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the right pit.", "it will not drop into the right pit.", "the outcome is uncertain.", "the ball will remain suspended."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit", "it will drop into the right pit", "it will stay in place", "it is uncertain"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit.", "it will drop into the right pit.", "it will stay in the middle.", "it is uncertain what will happen."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "none of these actions", "remove both the <color> and <color> floating walls"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the left pit", "into the right pit", "onto the floor", "can not answer"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the left pit", "into the right pit", "onto the floor", "cannot be determined"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["left pit", "right pit", "middle pit", "it remains uncertain"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["left pit", "right pit", "middle pit", "cannot answer"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit.", "it will drop into the right pit.", "it will remain suspended.", "it cannot be determined."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["left pit", "right pit", "middle pit", "cannot determine"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit", "it will drop into the right pit", "it will stay in place", "it will disappear"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit", "it will drop into the right pit", "it will remain in place", "cannot be determined"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["the left pit", "the right pit", "it will remain in place", "it will bounce out of both pits"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the right pit", "into the left pit", "onto the ground", "can not answer"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the right pit", "it will drop into the left pit", "it will remain in place", "cannot be determined"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["in the left pit", "not in the left pit", "cannot be determined", "in the right pit"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the left pit", "into the right pit", "into a different location", "it cannot be determined"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit", "it will drop into the right pit", "it will remain where it is", "cannot be determined"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["left pit", "right pit", "center pit", "cannot determine"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["dropping into the left pit", "dropping into the right pit", "staying at the center", "uncertain"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["the left pit", "the right pit", "neither pit", "both pits"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["right pit", "left pit", "it will remain in place", "none of the above"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit", "it will drop into the right pit", "it will remain in place", "it will bounce away"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the left pit", "into the right pit", "on the ground", "cannot be determined"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the left pit", "into the right pit", "it will not drop", "it is unpredictable"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the right pit", "into the left pit", "cannot be determined", "it won't drop into any pit"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["remove the <color> floating wall and other balls", "remove the <color> floating wall and other balls", "remove both the <color> and <color> floating walls", "none of the above"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["right pit", "left pit", "floating in air", "in the middle"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["left pit", "right pit", "drop outside the pits", "it will not drop at all"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["right pit", "left pit", "middle pit", "cannot answer"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the left pit", "it will drop into the right pit", "it cannot be determined", "it will stay in place"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the right pit.", "it will drop into the left pit.", "it will remain suspended.", "it will disappear."], "weight": 1}
+{"family": "throwing_final_destination", "options": ["it will drop into the right pit", "it will drop into the left pit", "it will remain in place", "it is uncertain"], "weight": 1}
+{"family": "throwing_final_destination", "options": ["into the left pit", "not into the left pit", "uncertain", "into the right pit"], "weight": 1}

@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use PhysEvolve, please cite the accompanying paper."
+type: software
+title: "PhysEvolve: Verifier-Grounded Self-Evolution for Physical Reasoning with Executable Worlds"
+authors:
+  - family-names: Hu
+    given-names: Jinyuan
+    affiliation: The Chinese University of Hong Kong
+  - family-names: Jiang
+    given-names: Yilei
+    affiliation: The Chinese University of Hong Kong
+  - family-names: Tang
+    given-names: Chen
+    affiliation: The Chinese University of Hong Kong
+  - family-names: Cai
+    given-names: Minghong
+    affiliation: The Chinese University of Hong Kong
+  - family-names: Liu
+    given-names: Xinran
+    affiliation: The Chinese University of Hong Kong
+  - family-names: Yue
+    given-names: Xiangyu
+    affiliation: The Chinese University of Hong Kong
+repository-code: "https://github.com/yelonhu/PhysEvolve"
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: "PhysEvolve: Verifier-Grounded Self-Evolution for Physical Reasoning with Executable Worlds"
+  authors:
+    - family-names: Hu
+      given-names: Jinyuan
+    - family-names: Jiang
+      given-names: Yilei
+    - family-names: Tang
+      given-names: Chen
+    - family-names: Cai
+      given-names: Minghong
+    - family-names: Liu
+      given-names: Xinran
+    - family-names: Yue
+      given-names: Xiangyu
+  year: 2026
+  notes: "Under review at ICLR 2027."

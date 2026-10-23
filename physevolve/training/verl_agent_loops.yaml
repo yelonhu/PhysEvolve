@@ -1,0 +1,2 @@
+- name: physevolve_single_turn
+  _target_: physevolve.training.verl_agent_loop.PhysEvolveSingleTurnAgentLoop

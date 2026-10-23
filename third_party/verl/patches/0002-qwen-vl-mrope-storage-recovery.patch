@@ -1,0 +1,166 @@
+diff --git a/verl/utils/tensordict_utils.py b/verl/utils/tensordict_utils.py
+index 9812f3b4..c007990a 100644
+--- a/verl/utils/tensordict_utils.py
++++ b/verl/utils/tensordict_utils.py
+@@ -283,6 +283,104 @@ def _slice_padded_nested_row(padded: torch.Tensor, row_index: int | torch.Tensor
+     return row[..., : int(length)]
+ 
+ 
++def _nested_sequence_lengths(reference_input_ids: torch.Tensor) -> list[int]:
++    """Return canonical per-sample sequence lengths from a jagged input_ids NestedTensor."""
++
++    if not isinstance(reference_input_ids, torch.Tensor) or not reference_input_ids.is_nested:
++        raise ValueError("reference_input_ids must be a jagged NestedTensor")
++    return [int(length) for length in reference_input_ids.offsets().diff().tolist()]
++
++
++def _mrope_rows_from_values(values: torch.Tensor, lengths: list[int]) -> list[torch.Tensor] | None:
++    """Try to recover per-sample ``(4, seq_len)`` mRoPE rows from a 2D storage view."""
++
++    if values.dim() != 2:
++        return None
++
++    batch_size = len(lengths)
++    total_seq_len = sum(lengths)
++    max_seq_len = max(lengths) if lengths else 0
++
++    if values.shape == (4, total_seq_len):
++        pieces = torch.split(values, lengths, dim=-1)
++        return [piece for piece in pieces]
++
++    if batch_size > 0 and values.shape[0] == batch_size * 4 and values.shape[1] >= max_seq_len:
++        per_sample = values.reshape(batch_size, 4, values.shape[1])
++        return [per_sample[i, :, :length] for i, length in enumerate(lengths)]
++
++    if values.shape[1] == 4 and values.shape[0] >= total_seq_len:
++        pieces = torch.split(values[:total_seq_len, :], lengths, dim=0)
++        return [piece.transpose(0, 1).contiguous() for piece in pieces]
++
++    return None
++
++
++def _mrope_rows_from_storage(position_ids: torch.Tensor, lengths: list[int]) -> list[torch.Tensor]:
++    """Recover per-sample ``(4, seq_len)`` mRoPE rows without trusting ragged metadata.
++
++    ``maybe_fix_3d_position_ids`` may repair ``_ragged_idx`` for TensorDict
++    indexing, but that can make public views such as ``to_padded_tensor`` expose
++    the fixed mRoPE axis as the ragged dimension for equal-length or single-row
++    micro-batches.  Prefer the underlying 2D value storage and only use padded
++    reconstruction as a final fallback.
++    """
++
++    if not isinstance(position_ids, torch.Tensor) or not position_ids.is_nested:
++        raise ValueError("position_ids must be a jagged NestedTensor")
++    if position_ids.dim() != 3:
++        raise ValueError(f"mRoPE position_ids must be 3D, got dim={position_ids.dim()}")
++
++    candidate_values = []
++    raw_values = getattr(position_ids, "_values", None)
++    if isinstance(raw_values, torch.Tensor):
++        candidate_values.append(raw_values)
++    candidate_values.append(position_ids.values())
++
++    for values in candidate_values:
++        rows = _mrope_rows_from_values(values, lengths)
++        if rows is not None and all(row.shape == (4, length) for row, length in zip(rows, lengths, strict=True)):
++            return rows
++
++    padded = position_ids.to_padded_tensor(0)
++    if padded.dim() != 3 or padded.shape[0] != len(lengths):
++        raise ValueError(
++            "mRoPE position_ids padded shape must be (batch, 4, max_seq_len) "
++            f"or (batch, max_seq_len, 4), got {tuple(padded.shape)} for batch={len(lengths)}"
++        )
++    if padded.shape[1] == 4:
++        return [padded[i, :, :length] for i, length in enumerate(lengths)]
++    if padded.shape[2] == 4:
++        return [padded[i, :length, :].transpose(0, 1) for i, length in enumerate(lengths)]
++    raise ValueError(f"mRoPE position_ids must have one fixed axis of size 4, got {tuple(padded.shape)}")
++
++
++def pack_mrope_position_ids(position_ids: torch.Tensor, reference_input_ids: torch.Tensor) -> torch.Tensor:
++    """Pack 3D mRoPE position ids into a stable ``(4, total_seq_len)`` tensor.
++
++    PyTorch's jagged NestedTensor ``values()`` layout for per-sample mRoPE
++    tensors is not stable: equal-length or rewrapped samples can appear as
++    ``(batch * 4, seq_len)`` or ``(total_seq_len, 4)`` instead of the expected
++    ``(4, total_seq_len)``.  The input ids own the true sequence lengths, so use
++    their offsets as the canonical source of ragged lengths.
++    """
++
++    lengths = _nested_sequence_lengths(reference_input_ids)
++    total_seq_len = sum(lengths)
++    rows = _mrope_rows_from_storage(position_ids, lengths)
++    if rows:
++        packed = torch.cat(rows, dim=-1)
++    else:
++        packed = position_ids.values().new_empty((4, 0))
++
++    if packed.shape != (4, total_seq_len):
++        raise ValueError(
++            "packed mRoPE position_ids must have shape "
++            f"(4, {total_seq_len}), got {tuple(packed.shape)}"
++        )
++    return packed
++
++
+ def chunk_tensordict(td: TensorDict, chunks: int) -> list[TensorDict]:
+     """Split a TensorDict into equal-sized chunks with special nested tensor handling.
+ 
+@@ -334,6 +432,20 @@ def chunk_tensordict(td: TensorDict, chunks: int) -> list[TensorDict]:
+     tds = new_td.chunk(chunks=chunks)
+     for key in nested_keys:
+         nt = td[key]
++        if (
++            key == "position_ids"
++            and "input_ids" in td.keys()
++            and isinstance(td["input_ids"], torch.Tensor)
++            and td["input_ids"].is_nested
++            and nt.dim() == 3
++        ):
++            rows = _mrope_rows_from_storage(nt, _nested_sequence_lengths(td["input_ids"]))
++            for i, chunk_td in enumerate(tds):
++                chunk_td[key] = torch.nested.as_nested_tensor(
++                    rows[i * chunk_size : (i + 1) * chunk_size], layout=torch.jagged
++                )
++            continue
++
+         try:
+             tensors = nt.unbind(dim=0)
+         except RuntimeError:
+@@ -476,6 +588,19 @@ def index_select_tensor_dict(batch: TensorDict, indices: torch.Tensor | list[int
+             if isinstance(tensor, torch.Tensor) and not tensor.is_nested:
+                 data_dict[key] = tensor[indices]
+             elif isinstance(tensor, torch.Tensor) and tensor.is_nested:
++                if (
++                    key == "position_ids"
++                    and "input_ids" in batch.keys()
++                    and isinstance(batch["input_ids"], torch.Tensor)
++                    and batch["input_ids"].is_nested
++                    and tensor.dim() == 3
++                ):
++                    rows = _mrope_rows_from_storage(tensor, _nested_sequence_lengths(batch["input_ids"]))
++                    data_dict[key] = torch.nested.as_nested_tensor(
++                        [rows[int(idx)] for idx in indices], layout=torch.jagged
++                    )
++                    continue
++
+                 try:
+                     # Fast path: works correctly for 2D jagged NestedTensors.
+                     tensor_lst = tensor.unbind()
+@@ -907,6 +1032,15 @@ def maybe_fix_3d_position_ids(data: TensorDict):
+     # will incur indexing error for ragged tensor. This only happens when using 3D position ids in VLMs.
+     # This is likely a bug in tensordict. As a workaround, we manually set _ragged_index.
+     if "position_ids" in data.keys() and data["position_ids"].dim() == 3 and data["position_ids"].is_nested:
++        values = getattr(data["position_ids"], "_values", None)
++        batch_size = data["position_ids"].shape[0]
++        if (
++            isinstance(values, torch.Tensor)
++            and values.dim() == 2
++            and values.shape[0] == batch_size * 4
++            and values.shape[1] > 4
++        ):
++            return
+         data["position_ids"]._ragged_idx = 2
+ 
+ 

@@ -1,0 +1,13 @@
+# CPU regression environment; full training dependencies are in physevolve_env.yml.
+pytest==8.3.5
+numpy==2.2.6
+torch==2.6.0
+mujoco==3.6.0
+omegaconf==2.3.0
+Pillow==11.2.1
+opencv-python-headless==4.11.0.86
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+tqdm==4.67.1
+transformers==4.53.0
+json5==0.12.0

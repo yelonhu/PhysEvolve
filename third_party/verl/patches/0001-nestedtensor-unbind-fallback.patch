@@ -1,0 +1,57 @@
+diff --git a/verl/utils/tensordict_utils.py b/verl/utils/tensordict_utils.py
+index 99b3524f..9812f3b4 100644
+--- a/verl/utils/tensordict_utils.py
++++ b/verl/utils/tensordict_utils.py
+@@ -276,6 +276,13 @@ def concat_tensordict(data: list[TensorDict]) -> TensorDict:
+     return output
+ 
+ 
++def _slice_padded_nested_row(padded: torch.Tensor, row_index: int | torch.Tensor, length: int) -> torch.Tensor:
++    """Slice one padded NestedTensor row along its ragged sequence dimension."""
++
++    row = padded[int(row_index)]
++    return row[..., : int(length)]
++
++
+ def chunk_tensordict(td: TensorDict, chunks: int) -> list[TensorDict]:
+     """Split a TensorDict into equal-sized chunks with special nested tensor handling.
+ 
+@@ -336,7 +343,10 @@ def chunk_tensordict(td: TensorDict, chunks: int) -> list[TensorDict]:
+             lengths = offsets.diff().tolist()
+             for i, chunk_td in enumerate(tds):
+                 chunk_lengths = lengths[i * chunk_size : (i + 1) * chunk_size]
+-                chunk_tensors = [padded_chunks[i][j, :seq_len] for j, seq_len in enumerate(chunk_lengths)]
++                chunk_tensors = [
++                    _slice_padded_nested_row(padded_chunks[i], j, seq_len)
++                    for j, seq_len in enumerate(chunk_lengths)
++                ]
+                 chunk_td[key] = torch.nested.as_nested_tensor(chunk_tensors, layout=torch.jagged)
+             continue
+ 
+@@ -466,10 +476,22 @@ def index_select_tensor_dict(batch: TensorDict, indices: torch.Tensor | list[int
+             if isinstance(tensor, torch.Tensor) and not tensor.is_nested:
+                 data_dict[key] = tensor[indices]
+             elif isinstance(tensor, torch.Tensor) and tensor.is_nested:
+-                tensor_lst = tensor.unbind()  # for performance
+-                data_dict[key] = torch.nested.as_nested_tensor(
+-                    [tensor_lst[idx] for idx in indices], layout=torch.jagged
+-                )
++                try:
++                    # Fast path: works correctly for 2D jagged NestedTensors.
++                    tensor_lst = tensor.unbind()
++                    data_dict[key] = torch.nested.as_nested_tensor(
++                        [tensor_lst[idx] for idx in indices], layout=torch.jagged
++                    )
++                except RuntimeError:
++                    # 3D+ jagged NestedTensors (e.g. mRoPE position_ids [B, 4, seq_len])
++                    # trigger a PyTorch bug in unbind where split_with_sizes is applied to
++                    # the wrong internal dimension. Fall back to padded-tensor reconstruction.
++                    # See https://github.com/pytorch/pytorch/issues/153238
++                    padded = tensor.to_padded_tensor(0)
++                    offsets = tensor.offsets()
++                    lengths = offsets.diff().tolist()
++                    selected = [_slice_padded_nested_row(padded, i, lengths[i]) for i in indices]
++                    data_dict[key] = torch.nested.as_nested_tensor(selected, layout=torch.jagged)
+             else:
+                 # This handles NonTensorStack (indexable by batch dim) and NonTensorData (scalar metadata).
+                 if tensor.shape:

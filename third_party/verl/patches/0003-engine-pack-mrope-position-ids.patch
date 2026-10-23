@@ -1,0 +1,26 @@
+diff --git a/verl/workers/engine/automodel/transformer_impl.py b/verl/workers/engine/automodel/transformer_impl.py
+index fc71384a..9f24545e 100644
+--- a/verl/workers/engine/automodel/transformer_impl.py
++++ b/verl/workers/engine/automodel/transformer_impl.py
+@@ -504,7 +504,7 @@ class AutomodelEngineWithLMHead(AutomodelEngine):
+             if pad_mode == DatasetPadMode.NO_PADDING:
+                 input_ids_rmpad = input_ids.values().unsqueeze(0)
+                 if position_ids.dim() == 3:
+-                    position_ids_rmpad = position_ids.values().unsqueeze(1)
++                    position_ids_rmpad = tu.pack_mrope_position_ids(position_ids, input_ids).unsqueeze(1)
+                 else:
+                     position_ids_rmpad = position_ids.values().unsqueeze(0)
+             else:
+diff --git a/verl/workers/engine/fsdp/transformer_impl.py b/verl/workers/engine/fsdp/transformer_impl.py
+index f8506206..ff431f69 100644
+--- a/verl/workers/engine/fsdp/transformer_impl.py
++++ b/verl/workers/engine/fsdp/transformer_impl.py
+@@ -905,7 +905,7 @@ class FSDPEngineWithLMHead(FSDPEngine):
+             if pad_mode == DatasetPadMode.NO_PADDING:
+                 input_ids_rmpad = input_ids.values().unsqueeze(0)  # (1, total_nnz)
+                 if position_ids.dim() == 3:
+-                    position_ids_rmpad = position_ids.values().unsqueeze(1)  # (4, 1, total_nnz)
++                    position_ids_rmpad = tu.pack_mrope_position_ids(position_ids, input_ids).unsqueeze(1)
+                 else:
+                     position_ids_rmpad = position_ids.values().unsqueeze(0)  # (1, total_nnz)
+             else:

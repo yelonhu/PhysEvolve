@@ -1,0 +1,26 @@
+The JSON file(s) in this directory — val_answer.json (and, optionally,
+test_answer.json) — are the PhysBench benchmark's publicly released
+ground-truth answer files, sourced from:
+
+    https://github.com/USC-GVL/PhysBench
+
+Upstream licence: Apache License 2.0, Copyright (c) PhysBench authors.
+See the upstream LICENSE at:
+
+    https://github.com/USC-GVL/PhysBench/blob/main/LICENSE
+
+The data is reproduced here unmodified for the sole purpose of enabling
+local accuracy scoring as permitted by the upstream licence. This directory
+contains answer data; vendored evaluator source and its licence are in
+../official_eval/.
+
+Citation:
+
+    @article{chow2025physbench,
+      title={PhysBench: Benchmarking and Enhancing Vision-Language Models
+             for Physical World Understanding},
+      author={Chow, Wei and Mao, Jiageng and Li, Boyi and
+              Seita, Daniel and Guizilini, Vitor and Wang, Yue},
+      journal={arXiv preprint arXiv:2501.16411},
+      year={2025}
+    }

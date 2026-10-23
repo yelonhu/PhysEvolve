@@ -1,0 +1,1602 @@
+[
+    {
+        "idx": 0,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 1,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 2,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "fluid",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 6,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "fluid",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "air",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 13,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 14,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "location",
+        "ability_type": "static",
+        "mode": "general"
+    },
+    {
+        "idx": 20,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 22,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 23,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 24,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 25,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 26,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 40,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 56,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 57,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 97,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "chemistry",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 103,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "air",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 105,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 130,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 133,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "fluid",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 134,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "fluid",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 203,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 204,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 205,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 206,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 207,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 209,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 210,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 211,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 212,
+        "answer": "D",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 243,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "air",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 244,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "air",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 245,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "air",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 246,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "air",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 253,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "air",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 254,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "air",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 263,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 272,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 347,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 348,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 353,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 354,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 355,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 381,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 382,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 383,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 384,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 385,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 386,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "throwing",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 767,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 768,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 770,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 771,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 990,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "depth",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 991,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "depth",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 992,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "distance",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 993,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "depth",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 994,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "depth",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 995,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "depth",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1011,
+        "answer": "",
+        "task_type": "relationships",
+        "sub_type": "distance",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1054,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "location",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1176,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "color",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1183,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1193,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1207,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1208,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1209,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1210,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1211,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1455,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1456,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1457,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1458,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1459,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1460,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1469,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 1470,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 1471,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 1472,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "reasoning",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1473,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 1474,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 1475,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "prediction",
+        "mode": "general"
+    },
+    {
+        "idx": 1565,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1580,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "number",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1582,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "number",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1583,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1584,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "comparison",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1585,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "number",
+        "ability_type": "identify",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1735,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "number",
+        "ability_type": "identify",
+        "mode": "image-only"
+    },
+    {
+        "idx": 1796,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 1874,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "static",
+        "mode": "general"
+    },
+    {
+        "idx": 1875,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "static",
+        "mode": "general"
+    },
+    {
+        "idx": 1947,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "static",
+        "mode": "general"
+    },
+    {
+        "idx": 1948,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "static",
+        "mode": "general"
+    },
+    {
+        "idx": 3253,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 3254,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 3422,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 3423,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 3424,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 3425,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 3426,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 3427,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 3437,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 3909,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "judgment",
+        "mode": "general"
+    },
+    {
+        "idx": 3910,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "manipulation",
+        "ability_type": "judgment",
+        "mode": "general"
+    },
+    {
+        "idx": 4315,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 4331,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 4907,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "fluid",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 4972,
+        "answer": "D",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 6242,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 6940,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7114,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "perception",
+        "mode": "image-only"
+    },
+    {
+        "idx": 7115,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7338,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7358,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7359,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7368,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7410,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7414,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "fluid",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7454,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7455,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7491,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "size",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7493,
+        "answer": "D",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7494,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "mass",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7503,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7512,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7513,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7522,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7523,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7524,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "distance",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7530,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7534,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7535,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7536,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7545,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "distance",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7555,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7596,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "color",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7597,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7641,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "location",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7665,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7666,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7682,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7688,
+        "answer": "A",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7689,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7698,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "chemistry",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7699,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "chemistry",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7711,
+        "answer": "C",
+        "task_type": "scene",
+        "sub_type": "light",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7712,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "color",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7754,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "location",
+        "ability_type": "static",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7755,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7772,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "chemistry",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7773,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "chemistry",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7787,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "chemistry",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7788,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "chemistry",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7798,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "collision",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 7799,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "motion",
+        "ability_type": "reasoning",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8047,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8048,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8069,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "motion",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8072,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "comparison",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8085,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8086,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8506,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8551,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8552,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "distance",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8553,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "distance",
+        "ability_type": "dynamic",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8555,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8556,
+        "answer": "A",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8557,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8558,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8559,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8560,
+        "answer": "B",
+        "task_type": "relationships",
+        "sub_type": "size",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8615,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "viewpoint",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8653,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "location",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 8662,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "location",
+        "ability_type": "static",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8675,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "comparison",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8679,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "comparison",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8701,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "comparison",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8707,
+        "answer": "D",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "comparison",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8712,
+        "answer": "A",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "comparison",
+        "mode": "image-only"
+    },
+    {
+        "idx": 8788,
+        "answer": "D",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "comparison",
+        "mode": "image-only"
+    },
+    {
+        "idx": 9123,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "general"
+    },
+    {
+        "idx": 9124,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "general"
+    },
+    {
+        "idx": 9125,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "general"
+    },
+    {
+        "idx": 9126,
+        "answer": "A",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "general"
+    },
+    {
+        "idx": 9141,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "general"
+    },
+    {
+        "idx": 9168,
+        "answer": "D",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "reasoning",
+        "mode": "general"
+    },
+    {
+        "idx": 9600,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9601,
+        "answer": "D",
+        "task_type": "property",
+        "sub_type": "color",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9672,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "color",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9673,
+        "answer": "C",
+        "task_type": "property",
+        "sub_type": "number",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9679,
+        "answer": "C",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9709,
+        "answer": "C",
+        "task_type": "dynamics",
+        "sub_type": "others",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9714,
+        "answer": "D",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "prediction",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9715,
+        "answer": "B",
+        "task_type": "scene",
+        "sub_type": "temperature",
+        "ability_type": "judgment",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9729,
+        "answer": "B",
+        "task_type": "dynamics",
+        "sub_type": "fluid",
+        "ability_type": "perception",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9730,
+        "answer": "B",
+        "task_type": "property",
+        "sub_type": "attribute",
+        "ability_type": "identify",
+        "mode": "image&video"
+    },
+    {
+        "idx": 9757,
+        "answer": "D",
+        "task_type": "relationships",
+        "sub_type": "motion",
+        "ability_type": "dynamic",
+        "mode": "image&video"
+    }
+]

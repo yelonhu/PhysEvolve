@@ -1,0 +1,231 @@
+diff --git a/tests/test_protocol_v2_on_cpu.py b/tests/test_protocol_v2_on_cpu.py
+index b434c412..790d1038 100644
+--- a/tests/test_protocol_v2_on_cpu.py
++++ b/tests/test_protocol_v2_on_cpu.py
+@@ -27,6 +27,41 @@ from tensordict.tensorclass import NonTensorData, NonTensorStack
+ from verl.utils import tensordict_utils as tu
+ 
+ 
++def _mrope_position_id_samples(lengths: list[int]) -> list[torch.Tensor]:
++    """Create Qwen3-VL style per-sample position ids with shape (4, seq_len)."""
++
++    samples = []
++    for sample_idx, length in enumerate(lengths):
++        rows = [torch.arange(length) + sample_idx * 100 + axis * 1000 for axis in range(4)]
++        samples.append(torch.stack(rows, dim=0))
++    return samples
++
++
++def _mrope_reference_input_ids(lengths: list[int]) -> torch.Tensor:
++    """Create reference input ids carrying the canonical sequence lengths."""
++
++    return torch.nested.as_nested_tensor([torch.arange(length) for length in lengths], layout=torch.jagged)
++
++
++def _expected_mrope_pack(samples: list[torch.Tensor]) -> torch.Tensor:
++    """Concatenate mRoPE samples into the canonical (4, total_seq_len) layout."""
++
++    return torch.cat([sample if sample.shape[0] == 4 else sample.transpose(0, 1) for sample in samples], dim=-1)
++
++
++def _force_3d_nested_unbind_fallback(monkeypatch: pytest.MonkeyPatch) -> None:
++    """Force tests to exercise the padded fallback for 3D jagged NestedTensors."""
++
++    original_unbind = torch.Tensor.unbind
++
++    def patched_unbind(self, *args, **kwargs):
++        if isinstance(self, torch.Tensor) and self.is_nested and self.dim() == 3:
++            raise RuntimeError("forced 3D jagged NestedTensor unbind fallback")
++        return original_unbind(self, *args, **kwargs)
++
++    monkeypatch.setattr(torch.Tensor, "unbind", patched_unbind)
++
++
+ def test_union_tensor_dict():
+     obs = torch.randn(100, 10)
+ 
+@@ -128,6 +163,148 @@ def test_index_select_tensor_dict():
+     tu.assert_tensordict_eq(selected_data, target_select_data)
+ 
+ 
++def test_index_select_tensor_dict_preserves_mrope_position_ids_fallback(monkeypatch: pytest.MonkeyPatch) -> None:
++    lengths = [5, 7, 6, 9]
++    samples = _mrope_position_id_samples(lengths)
++    position_ids = torch.nested.as_nested_tensor(samples, layout=torch.jagged)
++    data = tu.get_tensordict(
++        {
++            "position_ids": position_ids,
++            "padded_tensor": torch.arange(len(samples)),
++        }
++    )
++
++    _force_3d_nested_unbind_fallback(monkeypatch)
++    indices = torch.tensor([3, 1])
++    selected_data = tu.index_select_tensor_dict(data, indices)
++    selected_position_ids = selected_data["position_ids"]
++
++    assert selected_position_ids.to_padded_tensor(0).shape == torch.Size([2, 4, 9])
++    assert selected_position_ids.values().shape == torch.Size([4, lengths[3] + lengths[1]])
++    assert selected_position_ids.values().unsqueeze(1).shape == torch.Size([4, 1, lengths[3] + lengths[1]])
++
++    expected = torch.nested.as_nested_tensor([samples[3], samples[1]], layout=torch.jagged)
++    assert torch.equal(selected_position_ids.values(), expected.values())
++    assert torch.equal(selected_data["padded_tensor"], torch.tensor([3, 1]))
++
++
++def test_pack_mrope_position_ids_variable_length() -> None:
++    lengths = [5, 7, 6]
++    samples = _mrope_position_id_samples(lengths)
++    position_ids = torch.nested.as_nested_tensor(samples, layout=torch.jagged)
++    packed = tu.pack_mrope_position_ids(position_ids, _mrope_reference_input_ids(lengths))
++
++    assert packed.shape == torch.Size([4, sum(lengths)])
++    assert torch.equal(packed, _expected_mrope_pack(samples))
++
++
++def test_pack_mrope_position_ids_equal_length_bad_values_layout() -> None:
++    lengths = [9, 9]
++    samples = _mrope_position_id_samples(lengths)
++    position_ids = torch.nested.as_nested_tensor(samples, layout=torch.jagged)
++    assert position_ids.values().shape == torch.Size([len(samples) * 4, lengths[0]])
++
++    # This mirrors the actor path after maybe_fix_3d_position_ids rewrites the ragged axis.
++    position_ids._ragged_idx = 2
++    packed = tu.pack_mrope_position_ids(position_ids, _mrope_reference_input_ids(lengths))
++
++    assert packed.shape == torch.Size([4, sum(lengths)])
++    assert torch.equal(packed, _expected_mrope_pack(samples))
++
++
++def test_pack_mrope_position_ids_single_sample_after_bad_ragged_idx() -> None:
++    lengths = [1531]
++    samples = _mrope_position_id_samples(lengths)
++    position_ids = torch.nested.as_nested_tensor(samples, layout=torch.jagged)
++    position_ids._ragged_idx = 2
++
++    assert position_ids.to_padded_tensor(0).shape == torch.Size([1, 4, 4])
++    packed = tu.pack_mrope_position_ids(position_ids, _mrope_reference_input_ids(lengths))
++
++    assert packed.shape == torch.Size([4, lengths[0]])
++    assert torch.equal(packed, _expected_mrope_pack(samples))
++
++
++def test_maybe_fix_3d_position_ids_preserves_equal_length_mrope_view() -> None:
++    lengths = [1531, 1531]
++    samples = _mrope_position_id_samples(lengths)
++    td = tu.get_tensordict(
++        {
++            "input_ids": _mrope_reference_input_ids(lengths),
++            "position_ids": torch.nested.as_nested_tensor(samples, layout=torch.jagged),
++        }
++    )
++
++    tu.maybe_fix_3d_position_ids(td)
++
++    assert td["position_ids"].to_padded_tensor(0).shape == torch.Size([2, 4, 1531])
++    packed = tu.pack_mrope_position_ids(td["position_ids"], td["input_ids"])
++    assert packed.shape == torch.Size([4, sum(lengths)])
++    assert torch.equal(packed, _expected_mrope_pack(samples))
++
++
++def test_pack_mrope_position_ids_transposed_visible_layout() -> None:
++    lengths = [5, 7, 6]
++    samples = [sample.transpose(0, 1).contiguous() for sample in _mrope_position_id_samples(lengths)]
++    position_ids = torch.nested.as_nested_tensor(samples, layout=torch.jagged)
++    packed = tu.pack_mrope_position_ids(position_ids, _mrope_reference_input_ids(lengths))
++
++    assert packed.shape == torch.Size([4, sum(lengths)])
++    assert torch.equal(packed, _expected_mrope_pack(samples))
++
++
++def test_pack_mrope_position_ids_after_index_select_and_chunk() -> None:
++    lengths = [5, 7, 6, 9]
++    samples = _mrope_position_id_samples(lengths)
++    td = tu.get_tensordict(
++        {
++            "input_ids": _mrope_reference_input_ids(lengths),
++            "position_ids": torch.nested.as_nested_tensor(samples, layout=torch.jagged),
++        }
++    )
++
++    selected_indices = torch.tensor([3, 1])
++    selected = tu.index_select_tensor_dict(td, selected_indices)
++    selected_lengths = [lengths[idx] for idx in selected_indices.tolist()]
++    selected_samples = [samples[idx] for idx in selected_indices.tolist()]
++    selected_packed = tu.pack_mrope_position_ids(selected["position_ids"], selected["input_ids"])
++
++    assert selected_packed.shape == torch.Size([4, sum(selected_lengths)])
++    assert torch.equal(selected_packed, _expected_mrope_pack(selected_samples))
++
++    chunks = tu.chunk_tensordict(td, chunks=2)
++    for chunk_idx, chunk in enumerate(chunks):
++        start = chunk_idx * 2
++        chunk_lengths = lengths[start : start + 2]
++        chunk_samples = samples[start : start + 2]
++        packed = tu.pack_mrope_position_ids(chunk["position_ids"], chunk["input_ids"])
++        assert packed.shape == torch.Size([4, sum(chunk_lengths)])
++        assert torch.equal(packed, _expected_mrope_pack(chunk_samples))
++
++
++def test_mrope_select_and_chunk_survive_bad_equal_length_ragged_idx() -> None:
++    lengths = [1531, 1531]
++    samples = _mrope_position_id_samples(lengths)
++    td = tu.get_tensordict(
++        {
++            "input_ids": _mrope_reference_input_ids(lengths),
++            "position_ids": torch.nested.as_nested_tensor(samples, layout=torch.jagged),
++        }
++    )
++    td["position_ids"]._ragged_idx = 2
++
++    selected = tu.index_select_tensor_dict(td, torch.tensor([1]))
++    selected_packed = tu.pack_mrope_position_ids(selected["position_ids"], selected["input_ids"])
++    assert selected_packed.shape == torch.Size([4, lengths[1]])
++    assert torch.equal(selected_packed, samples[1])
++
++    chunks = tu.chunk_tensordict(td, chunks=2)
++    for idx, chunk in enumerate(chunks):
++        packed = tu.pack_mrope_position_ids(chunk["position_ids"], chunk["input_ids"])
++        assert packed.shape == torch.Size([4, lengths[idx]])
++        assert torch.equal(packed, samples[idx])
++
++
+ def test_tensordict_with_images():
+     # each sample contains a sequence with multiple images of different sizes
+     vocab_size = 128
+@@ -837,6 +1014,35 @@ def test_chunk_tensordict():
+                         assert torch.all(torch.eq(tensor.data["pixel_values"], expect["pixel_values"])).item()
+ 
+ 
++def test_chunk_tensordict_preserves_mrope_position_ids_fallback(monkeypatch: pytest.MonkeyPatch) -> None:
++    lengths = [5, 7, 6, 9]
++    samples = _mrope_position_id_samples(lengths)
++    position_ids = torch.nested.as_nested_tensor(samples, layout=torch.jagged)
++    td = tu.get_tensordict(
++        {
++            "input_ids": torch.nested.as_nested_tensor([torch.arange(length) for length in lengths], layout=torch.jagged),
++            "position_ids": position_ids,
++        }
++    )
++
++    _force_3d_nested_unbind_fallback(monkeypatch)
++    chunks = tu.chunk_tensordict(td, chunks=2)
++
++    first_position_ids = chunks[0]["position_ids"]
++    second_position_ids = chunks[1]["position_ids"]
++    assert first_position_ids.to_padded_tensor(0).shape == torch.Size([2, 4, 7])
++    assert second_position_ids.to_padded_tensor(0).shape == torch.Size([2, 4, 9])
++    assert first_position_ids.values().shape == torch.Size([4, lengths[0] + lengths[1]])
++    assert second_position_ids.values().shape == torch.Size([4, lengths[2] + lengths[3]])
++    assert first_position_ids.values().unsqueeze(1).shape == torch.Size([4, 1, lengths[0] + lengths[1]])
++    assert second_position_ids.values().unsqueeze(1).shape == torch.Size([4, 1, lengths[2] + lengths[3]])
++
++    expected_first = torch.nested.as_nested_tensor(samples[:2], layout=torch.jagged)
++    expected_second = torch.nested.as_nested_tensor(samples[2:], layout=torch.jagged)
++    assert torch.equal(first_position_ids.values(), expected_first.values())
++    assert torch.equal(second_position_ids.values(), expected_second.values())
++
++
+ def test_assign_non_tensor_stack_with_nested_lists():
+     """Test assign_non_tensor_stack with lists of lists."""
+     td = tu.get_tensordict({"obs": torch.randn(3, 4)}, non_tensor_dict={})

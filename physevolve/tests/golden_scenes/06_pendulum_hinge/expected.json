@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "min_collisions": 0,
+  "bodies": {
+    "bob": {
+      "final_grid": [9, 8, 8],
+      "final_status": "moving"
+    }
+  }
+}

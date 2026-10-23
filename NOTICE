@@ -1,0 +1,16 @@
+PhysEvolve
+
+This repository incorporates code originating from LeapLab's
+Absolute Zero Reasoner (https://github.com/LeapLabTHU/Absolute-Zero-Reasoner).
+The root MIT license retains the existing 2025 LeapLab copyright notice.
+
+Third-party code and data retain their original licenses and attribution:
+- veRL: pinned external source plus local patches in third_party/verl/.
+- PhysBench official evaluation and answer files: licenses and provenance
+  remain in evaluation/physbench/third_party/.
+- MuJoCo, vLLM, Qwen, and other runtime packages: their respective licenses.
+- CausalPhys and ContPhy datasets: obtain from their respective providers;
+  benchmark media are not bundled here.
+
+Figures are separate scholarly artifacts;
+this code license does not relicense third-party models or datasets.

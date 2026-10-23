@@ -1,0 +1,31 @@
+# Executor layer configuration.
+#
+# Default timeouts, simulation settings, and render geometry.
+# Keyword arguments to ``run_executor`` override these values per call.
+
+timeouts:
+  sandbox_timeout_s: 5.0
+  sim_timeout_s: 30.0
+  render_timeout_s: 15.0
+
+simulation:
+  timestep: 0.002
+  default_duration: 8.0
+  n_frames: 32
+  default_gravity: [0.0, 0.0, -9.81]
+
+rendering:
+  height: 480
+  width: 480
+  n_cameras: 1
+  default_camera_pos: [1.8, -1.8, 1.8]
+  default_camera_target: [0.0, 0.0, 0.5]
+
+task_weights:        # probability of each task mode
+  forward: 0.40
+  inverse: 0.30
+  parameter: 0.30
+
+triviality:
+  max_displacement_m: 0.05
+  require_zero_collisions: true

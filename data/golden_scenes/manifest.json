@@ -1,0 +1,46 @@
+{
+  "version": 3,
+  "description": "Stage-2 reference programs: throwing, collision, and motion variants.",
+  "stage2_dir": "data/golden_scenes/stage2",
+  "scenes": [
+    {
+      "scene_kind": "throwing_pit_board",
+      "variants": [
+        "01_throwing_pit_board__v01.py",
+        "01_throwing_pit_board__v02.py",
+        "01_throwing_pit_board__v03.py",
+        "01_throwing_pit_board__v04.py",
+        "01_throwing_pit_board__v05.py",
+        "01_throwing_pit_board__v06.py",
+        "01_throwing_pit_board__v07.py",
+        "01_throwing_pit_board__v08.py",
+        "01_throwing_pit_board__v09.py",
+        "01_throwing_pit_board__v10.py"
+      ]
+    },
+    {
+      "scene_kind": "collision_arena",
+      "variants": [
+        "02_collision_arena__v01.py",
+        "02_collision_arena__v02.py",
+        "02_collision_arena__v03.py",
+        "02_collision_arena__v04.py",
+        "02_collision_arena__v05.py",
+        "02_collision_arena__v06.py",
+        "02_collision_arena__v07.py",
+        "02_collision_arena__v08.py"
+      ]
+    },
+    {
+      "scene_kind": "motion_lab",
+      "variants": [
+        "03_motion_lab__v01.py",
+        "03_motion_lab__v02.py",
+        "03_motion_lab__v03.py",
+        "03_motion_lab__v04.py",
+        "03_motion_lab__v05.py",
+        "03_motion_lab__v06.py"
+      ]
+    }
+  ]
+}

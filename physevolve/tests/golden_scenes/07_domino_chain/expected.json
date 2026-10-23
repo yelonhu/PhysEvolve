@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "min_collisions": 2,
+  "bodies": {
+    "d1": {
+      "final_grid": [9, 8, 0],
+      "final_status": "stable"
+    },
+    "d2": {
+      "final_grid": [10, 8, 0],
+      "final_status": "stable"
+    },
+    "d3": {
+      "final_grid": [11, 8, 0],
+      "final_status": "fallen"
+    }
+  }
+}
