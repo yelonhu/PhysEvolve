@@ -251,8 +251,7 @@ If you use PhysEvolve in your research, please cite:
             with Executable Worlds},
   author = {Hu, Jinyuan and Jiang, Yilei and Tang, Chen and Cai, Minghong
             and Liu, Xinran and Yue, Xiangyu},
-  year   = {2026},
-  note   = {Under review at ICLR 2027}
+  year   = {2026}
 }
 ```
 
