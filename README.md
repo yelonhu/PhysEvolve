@@ -8,9 +8,15 @@
   <sub>Multimedia Laboratory, The Chinese University of Hong Kong</sub><br>
 </p>
 
-[![Project Page](https://img.shields.io/badge/Project-Page-6a4791.svg)](https://yelonhu.github.io/physevolve-page/) [![Paper](https://img.shields.io/badge/Paper-arXiv_coming_soon-6a4791.svg)][paper] [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-6a4791.svg)](https://huggingface.co/YelonLFT/physevolve-v7i-0851-step100) [![Quick Start](https://img.shields.io/badge/Quick_Start-555555.svg)](#quick-start) [![Training](https://img.shields.io/badge/Training-555555.svg)](#training) [![Evaluation](https://img.shields.io/badge/Evaluation-555555.svg)](#evaluation)
+[![Project Page](https://img.shields.io/badge/Project-Page-6a4791.svg)](https://yelonhu.github.io/physevolve-page/) [![arXiv](https://img.shields.io/badge/arXiv-2610.34921-6a4791.svg)][paper] [![Hugging Face Paper](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-6a4791.svg)](https://huggingface.co/papers/2610.34921) [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-6a4791.svg)](https://huggingface.co/YelonLFT/physevolve-v7i-0851-step100) [![Quick Start](https://img.shields.io/badge/Quick_Start-555555.svg)](#quick-start) [![Training](https://img.shields.io/badge/Training-555555.svg)](#training) [![Evaluation](https://img.shields.io/badge/Evaluation-555555.svg)](#evaluation)
 
 </div>
+
+<p align="center">
+  <a href="https://yelonhu.github.io/physevolve-page/#counterfactual"><img src="https://yelonhu.github.io/physevolve-page/assets/cf/pair-still.jpg" width="100%" alt="The same Throwing world run twice: in the original run the orange ball lands in the left pit; with the black wall and the other balls removed it lands in the middle pit."></a>
+</p>
+
+<p align="center"><sub>One world, edited and run again. Left: the original run, where the orange ball lands in the left pit. Right: the black wall and the other balls removed, and it lands in the middle pit. The simulator turns this difference into a question with an exact answer. <a href="https://yelonhu.github.io/physevolve-page/#counterfactual">Try the edits on the project page.</a></sub></p>
 
 ## Executable Worlds
 
@@ -239,7 +245,7 @@ For development, install [the test dependencies](requirements-test.txt) and run 
 
 ## Paper
 
-The arXiv link is coming soon.
+[arXiv:2610.34921](https://arxiv.org/abs/2610.34921) · [Hugging Face Papers](https://huggingface.co/papers/2610.34921) · [Project page](https://yelonhu.github.io/physevolve-page/)
 
 ## Citation
 
@@ -247,11 +253,14 @@ If you use PhysEvolve in your research, please cite:
 
 ```bibtex
 @misc{hu2026physevolve,
-  title  = {PhysEvolve: Verifier-Grounded Self-Evolution for Physical Reasoning
-            with Executable Worlds},
-  author = {Hu, Jinyuan and Jiang, Yilei and Tang, Chen and Cai, Minghong
-            and Liu, Xinran and Yue, Xiangyu},
-  year   = {2026}
+  title         = {PhysEvolve: Verifier-Grounded Self-Evolution for Physical
+                   Reasoning with Executable Worlds},
+  author        = {Hu, Jinyuan and Jiang, Yilei and Tang, Chen and Cai, Minghong
+                   and Liu, Xinran and Yue, Xiangyu},
+  year          = {2026},
+  eprint        = {2610.34921},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI}
 }
 ```
 
@@ -261,4 +270,4 @@ Code is distributed under the [MIT license](LICENSE). Existing copyright notices
 
 PhysEvolve builds on MuJoCo, veRL, vLLM, and Qwen, and is evaluated on PhysBench, CausalPhys, and ContPhy. We thank the authors and maintainers of these projects for making their work available.
 
-[paper]: #paper
+[paper]: https://arxiv.org/abs/2610.34921
