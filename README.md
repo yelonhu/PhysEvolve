@@ -13,10 +13,10 @@
 </div>
 
 <p align="center">
-  <a href="https://yelonhu.github.io/physevolve-page/#counterfactual"><img src="https://yelonhu.github.io/physevolve-page/assets/cf/pair-still.jpg" width="100%" alt="The same Throwing world run twice: in the original run the orange ball lands in the left pit; with the black wall and the other balls removed it lands in the middle pit."></a>
+  <a href="https://yelonhu.github.io/physevolve-page/#counterfactual"><img src="https://yelonhu.github.io/physevolve-page/assets/cf/pair-still.jpg" width="100%" alt="The same Throwing world run twice: in the original run the orange ball lands in the left pit; with the black wall and the other balls removed it lands in the right pit."></a>
 </p>
 
-<p align="center"><sub>One world, edited and run again. Left: the original run, where the orange ball lands in the left pit. Right: the black wall and the other balls removed, and it lands in the middle pit. The simulator turns this difference into a question with an exact answer. <a href="https://yelonhu.github.io/physevolve-page/#counterfactual">Try the edits on the project page.</a></sub></p>
+<p align="center"><sub>One world, edited and run again. Left: the original run, where the orange ball lands in the left pit. Right: the black wall and the other balls removed, and it lands in the right pit. The simulator turns this difference into a question with an exact answer. <a href="https://yelonhu.github.io/physevolve-page/#counterfactual">Try the edits on the project page.</a></sub></p>
 
 ## Executable Worlds
 
